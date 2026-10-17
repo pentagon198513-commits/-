@@ -1,0 +1,56 @@
+{
+  "catalog": {
+    "organization_id": "demo-organization",
+    "cabinet_id": "demo-cabinet",
+    "products": [
+      {
+        "product_id": "demo-item-1",
+        "name": "Демонстрационный товар А",
+        "article": "00123",
+        "barcodes": ["4600000000001"]
+      },
+      {
+        "product_id": "demo-item-2",
+        "name": "Демонстрационный товар Б",
+        "article": "DUPLICATE",
+        "barcodes": ["4600000000002"]
+      },
+      {
+        "product_id": "demo-item-3",
+        "name": "Демонстрационный товар В",
+        "article": "DUPLICATE",
+        "barcodes": ["4600000000003"]
+      }
+    ]
+  },
+  "lines": [
+    {
+      "order_id": "demo-order-1",
+      "line_id": "1",
+      "organization_id": "demo-organization",
+      "cabinet_id": "demo-cabinet",
+      "article": "00123"
+    },
+    {
+      "order_id": "demo-order-2",
+      "line_id": "1",
+      "organization_id": "demo-organization",
+      "cabinet_id": "demo-cabinet",
+      "article": "MISSING"
+    },
+    {
+      "order_id": "demo-order-3",
+      "line_id": "1",
+      "organization_id": "demo-organization",
+      "cabinet_id": "demo-cabinet",
+      "article": "DUPLICATE"
+    },
+    {
+      "order_id": "demo-order-4",
+      "line_id": "1",
+      "organization_id": "demo-organization",
+      "cabinet_id": "demo-other-cabinet",
+      "article": "00123"
+    }
+  ]
+}
